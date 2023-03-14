@@ -5,10 +5,29 @@ import java.util.Random;
 public class Cleric {
 
 	String name;
-	final int MAXHP = 50;
 	int hP = MAXHP;
-	final int MAXMP = 10;
 	int mp = MAXMP;
+
+	final static int MAXHP = 50;
+	final static int MAXMP = 10;
+
+	Cleric(String name, int hp, int mp) {
+		this.name = "아서스";
+		this.hP = 40;
+		this.mp = 5;
+	}
+
+	Cleric(String name, int hp) {
+		this.name = "아서스";
+		this.hP = 35;
+		this.mp = MAXMP;
+	}
+
+	Cleric(String name) {
+		this.name = "아서스";
+		this.hP = MAXHP;
+		this.mp = MAXMP;
+	}
 
 	void selfAid() {
 		this.mp -= 5;
