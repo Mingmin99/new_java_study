@@ -5,10 +5,22 @@ public class Hero {
 	// global variable
 	// member.variable
 
-	String name ;
-	int hp ;
+	String name;
+	int hp;
+	Sword sword;
+	static int Money;
+
+	// 기본 생성자 primary constructor
+//	Hero(String name, int hp) {
+//		this.name = name;
+//		hp = 100;
+//		name = "noname";
+//		sword = new Sword();
+//	}
 
 	void attack() {
+		System.out.println(this.name + "는 공격했다!");
+		System.out.println("적에게 5포인트의 데미지를 주었다!");
 	}
 
 	void run() {
@@ -32,6 +44,10 @@ public class Hero {
 	void sleep() {
 		this.hp = 100;
 		System.out.println(this.name + "는 잠을 자고 회복했다");
+
+	}
+
+	static void setRandomMoney() {
 
 	}
 

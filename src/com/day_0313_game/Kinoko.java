@@ -5,7 +5,7 @@ public class Kinoko {
 	int hp = 35;
 	final int LEVEL = 10;
 	char suffix;
-
+	
 	void attack() {
 	}
 
