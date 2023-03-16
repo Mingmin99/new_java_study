@@ -1,4 +1,4 @@
-package com.day_0313_Exam1;
+package com.day_0313.Exam1;
 
 import java.util.Random;
 

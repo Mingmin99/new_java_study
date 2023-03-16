@@ -1,4 +1,4 @@
-package com.day_0313_game;
+package com.day_0313.game;
 
 public class Hero {
 	// field.variable
@@ -10,13 +10,7 @@ public class Hero {
 	Sword sword;
 	static int Money;
 
-	// 기본 생성자 primary constructor
-//	Hero(String name, int hp) {
-//		this.name = name;
-//		hp = 100;
-//		name = "noname";
-//		sword = new Sword();
-//	}
+
 
 	void attack() {
 		System.out.println(this.name + "는 공격했다!");
