@@ -19,4 +19,10 @@ public class Wizard extends Character {
 		this.mp -= 5;
 	}
 
+	@Override
+	public void attack(Monster monster) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
