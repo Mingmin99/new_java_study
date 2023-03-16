@@ -1,4 +1,4 @@
-package com.day_0314_game;
+package com.day_0314.game;
 
 public class Wizard {
 	String name;

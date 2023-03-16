@@ -1,4 +1,4 @@
-package com.day_0314_chap10;
+package com.day_0314.chap10;
 
 public class Wand {
 	private String name;
