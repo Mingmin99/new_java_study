@@ -4,15 +4,15 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Character[] characters = new Character[5];
-		characters[0] = new Hero();
-		characters[1] = new Hero();
-		characters[2] = new Thief();
-		characters[3] = new Wizard();
-		characters[4] = new Wizard();
+//  타입 Monster 로 퉁치기
 
-		for (Character character : characters) {
-			character.setHp(character.getHp() + 50);
+		Monster[] monsters = new Monster[2];
+		monsters[0] = new Slime();
+		monsters[1] = new Goblin();
+		
+//동작은 안에 담긴 객체를 따름
+		for (Monster monster : monsters) {
+			monster.run();
 		}
 
 //		Character character = new Wizard();
