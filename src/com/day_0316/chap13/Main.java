@@ -3,15 +3,24 @@ package com.day_0316.chap13;
 public class Main {
 
 	public static void main(String[] args) {
-		Slime slime = new Slime();
-		Monster monster = new Slime();
-		slime.run();
-		monster.run();
 
-// Character[] characters = new Character [5];
-//
+		Character[] characters = new Character[5];
+		characters[0] = new Hero();
+		characters[1] = new Hero();
+		characters[2] = new Thief();
+		characters[3] = new Wizard();
+		characters[4] = new Wizard();
+
+		for (Character character : characters) {
+			character.setHp(character.getHp() + 50);
+		}
+
 //		Character character = new Wizard();
-//
+//Slime slime = new Slime();
+//		Monster monster = new Slime();
+//		slime.run();
+//		monster.run();
+
 //		if (character instanceof Wizard) {
 //			Wizard wizard = (Wizard) character;
 //			System.out.println("형 변환 가능");
