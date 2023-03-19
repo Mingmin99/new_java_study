@@ -2,8 +2,12 @@ package com.day_0317.enumLogIn;
 
 public class Main {
 
+	enum AuthState {
+		AUTHENTICATED, UNAUTHENTICATED, AUTHENTICATING
+	}
+
 	public static void main(String[] args) {
-		int authState = AuthState.UNAUTHENTICATED;
+		AuthState authState = AuthState.AUTHENTICATED;
 
 		if (authState == AuthState.AUTHENTICATED) {
 			System.out.println("로그인 됨");
