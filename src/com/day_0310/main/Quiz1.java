@@ -1,4 +1,4 @@
-package com.day_0310.main;
+ package com.day_0310.main;
 
 import java.util.Scanner;
 
@@ -14,7 +14,7 @@ public class Quiz1 {
 
 			int x = sc.nextInt();
 			int y = sc.nextInt();
-
+ 
 			if (Math.sqrt((x - a) * (x - a) + (y - b) * (y - b)) >= R) {
 				System.out.println("silent");
 			} else {
