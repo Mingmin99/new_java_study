@@ -16,7 +16,8 @@ public class AccountTest {
 		assertEquals("홍길동", account.getOwner());
 	}
 	
-	@Test(expected = IllegalArgumentException.class)
+	@Test
+	(expected = IllegalArgumentException.class)
 	public void throwsExceptionWithTWOcHARNAME() {}
 }
  

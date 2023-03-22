@@ -8,7 +8,8 @@ import com.day_0321.unitTest.Bank;
 
 public class BankTest {
 
-	@Test(expected = IllegalArgumentException.class)
+	@Test
+	(expected = IllegalArgumentException.class)
 	public void testNameLength() {
 		Bank bank = new Bank();
 		bank.setName("b");
