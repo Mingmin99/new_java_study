@@ -1,5 +1,6 @@
 package com.day_3023.Library;
 
+import java.util.Calendar;
 import java.util.Scanner;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -302,6 +303,21 @@ public class Member implements Crud {
 			tempFile.renameTo(memberFile);
 		}
 
+	}
+
+	public int getNumberOfLoans() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public boolean hasExtendedLoan() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public Calendar getLoans() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

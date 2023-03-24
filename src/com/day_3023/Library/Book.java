@@ -249,4 +249,9 @@ public class Book implements Crud {
 
 	}
 
+	public boolean isBorrowed() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }
