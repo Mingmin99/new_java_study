@@ -69,7 +69,7 @@ public class Main {
 
 				break;
 			case 3:
-				l.borrowBook(m, b);
+				l.borrowBook();
 
 				break;
 			case 4:
