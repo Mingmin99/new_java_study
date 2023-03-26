@@ -8,14 +8,14 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
-public class Loan { 
+public class Loan {
 	Scanner scanner = new Scanner(System.in);
 	private boolean isBorrowed; // 대출 여부
 	private Date borrowedDate; // 대출일
 	private Date dueDate; // 반납예정일
 
-	// 대출 이력을 저장할 리스트
-//	private List<Loan> loanList;
+//	 대출 이력을 저장할 리스트
+//	private List<Book> loanList;
 //
 //	public Loan() {
 //		this.loanList = new ArrayList<>();
@@ -47,30 +47,48 @@ public class Loan {
 		System.out.print("책 제목 입력: ");
 		String bookTitle = scanner.next();
 
-		// 멤버와 책 생성
+		File file2 = new File("book.txt"); // 파일 경로에 맞게 수정
+		try {
+			Scanner fileScanner = new Scanner(file);
+
+			while (fileScanner.hasNextLine()) {
+				String line = fileScanner.nextLine();
+				if (line.contains(bookTitle)) {
+					System.out.println("찾은  정보: " + line);
+					break;
+				}
+			}
+
+			fileScanner.close();
+		} catch (FileNotFoundException e) {
+			System.out.println("파일을 찾을 수 없습니다.");
+		}
+	}
+
+	// 멤버와 책 생성
 //        Member member = new Member(memberName);
 //        Book book = new Book(bookTitle);
 
-		// borrowBook() 메소드 호출
+	// borrowBook() 메소드 호출
 //		borrowBook(member, book);
 
-		if (book.isBorrowed()) {
-			System.out.println("이미 대출 중인 도서입니다.");
-			return;
-		} else {
-			isBorrowed = true;
-			borrowedDate = new Date(); // 대출일은 현재 날짜로 설정
-			System.out.println("대출날짜: " + borrowedDate);
-			Date dueData = null;
-			Calendar calendar = Calendar.getInstance();
-			calendar.setTime(borrowedDate);
-			calendar.add(Calendar.DATE, 14); // 대출 기간은 14일로 고정
-			dueDate = (Date) calendar.getTime();
-			System.out.println("도서가 대출되었습니다. 반납 예정일은 " + dueDate + "입니다.");
-
-		}
-
-	}
+//		if (Book.isBorrowed()) {
+//			System.out.println("이미 대출 중인 도서입니다.");
+//			return;
+//		} else {
+//			isBorrowed = true;
+//			borrowedDate = new Date(); // 대출일은 현재 날짜로 설정
+//			System.out.println("대출날짜: " + borrowedDate);
+//			Date dueData = null;
+//			Calendar calendar = Calendar.getInstance();
+//			calendar.setTime(borrowedDate);
+//			calendar.add(Calendar.DATE, 14); // 대출 기간은 14일로 고정
+//			dueDate = (Date) calendar.getTime();
+//			System.out.println("도서가 대출되었습니다. 반납 예정일은 " + dueDate + "입니다.");
+//
+//		}
+//
+//	}
 
 	// 연장 메서드
 	public void extendBorrow() {

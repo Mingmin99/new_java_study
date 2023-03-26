@@ -35,30 +35,6 @@ public class Member implements Crud {
 
 	}
 
-//	@Override
-//	public void show() {
-//		// TODO Auto-generated method stub
-//
-//	}
-//
-//	@Override
-//	public void add() {
-//		// TODO Auto-generated method stub
-//
-//	}
-//
-//	@Override
-//	public void revise() {
-//		// TODO Auto-generated method stub
-//
-//	}
-//
-//	@Override
-//	public void delete() {
-//		// TODO Auto-generated method stub
-//
-//	}
-
 	public String getDate() {
 		return date;
 	}
